@@ -88,16 +88,6 @@ header {
   padding: 2rem 1rem;
 }
 
-@media screen and (min-width: 500px) {
-  .wrapper {
-    padding: 4rem 8rem;
-  }
-
-  header {
-    justify-content: normal;
-  }
-}
-
 .card-container {
   display: flex;
   justify-content: center;
@@ -144,7 +134,22 @@ header {
     font-weight: 500;
     font-size: 0.7em;
     font-family: inherit;
-    border-radius: 2px;
+    border-radius: 4px;
+    transition: 0.3s ease;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .wrapper {
+    padding: 4rem 8rem;
+  }
+
+  header {
+    justify-content: normal;
   }
 }
 </style>
